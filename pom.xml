@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bw.springboot</groupId>
-	<artifactId>default-example-springboot-app</artifactId>
+	<artifactId>support-bw-app-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bw-question-app</name>
 	<description>Demo project for Spring Boot</description>

@@ -6,8 +6,8 @@
 
   <configuration>
 
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-      <file>bw.log</file>
+    <appender name="File" class="ch.qos.logback.core.FileAppender">
+      <file>bw-backend-scheisse.log</file>
       <append>true</append>
       <!-- set immediateFlush to false for much higher logging throughput -->
       <immediateFlush>true</immediateFlush>
@@ -35,7 +35,7 @@
 
   <appender name="RollingFile"
             class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>bw.log</file>
+    <file>bw.rotate.log</file>
     <encoder
         class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
       <Pattern>%d %p %C{1.} [%t] %m%n</Pattern>
@@ -55,12 +55,12 @@
 
   <!-- LOG everything at INFO level -->
   <root level="info">
-    <appender-ref ref="RollingFile" />
+    <appender-ref ref="File" />
     <appender-ref ref="Console" />
   </root>
 
   <!-- LOG "com.baeldung*" at TRACE level -->
-  <logger name="com.baeldung" level="trace" additivity="false">
+  <logger name="com.bw" level="trace" additivity="false">
     <appender-ref ref="RollingFile" />
     <appender-ref ref="Console" />
     <appender-ref ref="File" />
