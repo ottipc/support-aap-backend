@@ -11,3 +11,11 @@ $ sudo chmod 500 your-app.jar
 MmZhMzliZGE5MDUyZWIyMDExZjRkYWE3
 
 
+
+
+sudo yum install maven
+
+
+FilePath : 
+
+
